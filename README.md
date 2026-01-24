@@ -16,6 +16,10 @@ The nodes rely on several standard libraries. Ensure they are installed in your 
 pip install torch numpy matplotlib soundfile Pillow
 ```
 
+## Preview
+
+![Preview](./images/demo.png)
+
 ## Installation
 
 1. Navigate to your ComfyUI custom nodes directory:
