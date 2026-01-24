@@ -1,4 +1,4 @@
-# ComfyUI Audio Visualizer
+# ComfyUI Audio Waveform Visualizer
 
 A suite of custom nodes for ComfyUI designed to generate high-quality audio waveform visualizations. Whether you need a real-time preview on your node or a high-fidelity image for video synthesis, this package provides multiple ways to see your sound.
 
