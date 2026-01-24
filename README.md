@@ -15,6 +15,10 @@ The nodes rely on several standard libraries. Ensure they are installed in your 
 ```bash
 pip install torch numpy matplotlib soundfile Pillow
 ```
+or
+```
+pip install -r requirements.txt
+```
 
 ## Preview
 
@@ -27,7 +31,8 @@ pip install torch numpy matplotlib soundfile Pillow
    cd ComfyUI/custom_nodes/
    ```
 2. Clone or copy this repository into a folder named `audio-visualizer`.
-3. Restart ComfyUI.
+3. Install the dependencies `pip install -r requirements.txt` (make sure to use the python from ComfyUI to install) 
+4. Restart ComfyUI.
 
 ---
 
