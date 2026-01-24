@@ -5,6 +5,13 @@ app.registerExtension({
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         if (nodeData.name === "AudioWaveformVisualizer") {
             
+            const onNodeCreated = nodeType.prototype.onNodeCreated;
+            nodeType.prototype.onNodeCreated = function () {
+                onNodeCreated?.apply(this, arguments);
+                this.size = [400, 360]; // Initial size: 400 width, 360 height
+                this.min_size = [200, 360]; // Prevent resizing smaller than the waveform area
+            };
+            
             nodeType.prototype.onExecuted = function (message) {
                 if (message.waveform_peaks) {
                     this.waveformValues = message.waveform_peaks;
@@ -18,7 +25,7 @@ app.registerExtension({
                 const margin = 5;
                 const y = 50; // Start below the title/widgets
                 const w = Math.max(64, this.size[0] - (margin * 2));
-                const h = Math.max(200, this.size[1] - y - margin); // Minimum height of 200
+                const h = Math.max(300, this.size[1] - y - margin); // Minimum height of 300
 
                 // Create or update the offscreen buffer
                 if (this.needsRedraw || !this.bufferCanvas || this.bufferCanvas.width !== w || this.bufferCanvas.height !== h) {
