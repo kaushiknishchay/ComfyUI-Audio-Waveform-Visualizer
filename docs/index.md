@@ -105,6 +105,4 @@ This project is licensed under the [MIT License](https://github.com/your-usernam
 *   **Website**: [nkaushik.in](https://nkaushik.in)
 *   **Blog**: [blog.nkaushik.in](https://blog.nkaushik.in)
 
----
 
-*Analytics: This site uses Google Analytics (ID: G-2N9VE1LSYK).*
