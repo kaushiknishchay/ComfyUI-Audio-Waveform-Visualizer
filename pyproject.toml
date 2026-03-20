@@ -20,7 +20,7 @@ license = {file = "LICENSE"}
 #     "Environment :: GPU :: Apple Metal",    # Apple Metal support
 # ]
 
-dependencies = ["torch", "numpy", "matplotlib", "Pillow"]
+dependencies = ["torch", "numpy", "matplotlib", "Pillow", "soundfile"]
 
 [project.urls]
 Repository = "https://github.com/kaushiknishchay/ComfyUI-Audio-Waveform-Visualizer"
